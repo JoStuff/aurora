@@ -1,0 +1,12 @@
+<index version="1.0">
+  <source>
+    <name>Circle of the Cryptids</name>
+    <abbreviation>CotC</abbreviation>
+    <author>Your Name</author>
+    <description>Druid subclass focused on shapeshifting into mythical and fearsome cryptids.</description>
+  </source>
+
+  <files>
+    <file>data/classes/druid-subclass-cryptids.xml</file>
+  </files>
+</index>

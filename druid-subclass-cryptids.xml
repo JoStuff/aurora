@@ -1,0 +1,72 @@
+<root>
+  <class name="Druid">
+    <description>Druids are wielders of nature's power, shifting forms and calling upon elemental magic.</description>
+    <archetype>
+      <name>Circle of the Cryptids</name>
+      <source>CotC</source>
+      <description>
+        Some Druids do not simply revere nature—they embrace its most mysterious and terrifying aspects.
+        The Circle of the Cryptids dedicates itself to the study and protection of legendary creatures that lurk at the edges of civilization.
+      </description>
+
+      <spellcasting>
+        <spell level="3" name="Darkness" />
+        <spell level="3" name="Mirror Image" />
+        <spell level="5" name="Fear" />
+        <spell level="5" name="Lightning Bolt" />
+        <spell level="7" name="Greater Invisibility" />
+        <spell level="7" name="Dominate Beast" />
+        <spell level="9" name="Cloudkill" />
+        <spell level="9" name="Dream" />
+      </spellcasting>
+
+      <feature level="2" name="Cryptid Wild Shape">
+        <description>
+          You can use Wild Shape to transform into cryptids instead of normal beasts.
+          You gain access to:
+          - CR 1: Selkie
+          - CR 2: Skinwalker, Kelpie, Ozark Howler, Wendigo
+          - CR 3: Jersey Devil, Mothman
+          - CR 4: Mishipeshu
+          These forms follow Wild Shape rules and may include supernatural traits.
+          You can choose to retain the ability to speak in cryptid form.
+        </description>
+      </feature>
+
+      <feature level="2" name="Cryptid's Veil">
+        <description>
+          As a bonus action, vanish into shadows for 1 minute:
+          - Advantage on Stealth checks
+          - Darkvision 60 ft. (or +30 ft. if you already have Darkvision)
+          - Disadvantage on being tracked by non-magical means
+          Uses: Proficiency Bonus per long rest.
+        </description>
+      </feature>
+
+      <feature level="6" name="Hybrid Transformation">
+        <description>
+          Gain a partial cryptid form:
+          - Choose one feature from a cryptid (e.g., Hunger Frenzy)
+          - Gain magical natural weapons (claws, fangs, etc.)
+          You can still cast spells, but can’t wear armor or shields.
+        </description>
+      </feature>
+
+      <feature level="10" name="Fear of the Unknown">
+        <description>
+          - Creatures within 10 ft. have disadvantage on Insight against you.
+          - Once per turn when attacked, force attacker to make a Wisdom save (DC = 8 + Proficiency + Wis).
+            On failure, they are frightened of you for 1 minute.
+          Uses: Wisdom modifier per long rest.
+        </description>
+      </feature>
+
+      <feature level="14" name="Myth Made Flesh">
+        <description>
+          - You can remain in Cryptid Wild Shape indefinitely.
+          - Once per long rest, if damage would reduce you to 0 HP, drop to 1 HP and teleport 30 feet away.
+        </description>
+      </feature>
+    </archetype>
+  </class>
+</root>

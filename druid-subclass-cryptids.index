@@ -1,4 +1,13 @@
 <root>
+  <info>
+    <name>Circle of the Cryptids</name>
+    <author>JoStuff</author>
+    <version>1.0</version>
+    <description>A custom Druid archetype for Aurora D&D 5e app.</description>
+    <sources>
+      <source abbreviation="CotC" name="Circle of the Cryptids" />
+    </sources>
+  </info>
   <class name="Druid">
     <description>Druids are wielders of nature's power, shifting forms and calling upon elemental magic.</description>
     <archetype>

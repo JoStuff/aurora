@@ -1,7 +1,7 @@
 <elements>
   <info>
     <update version="1.0.0">
-      <file name="druid-cryptids.xml" url="https://raw.githubusercontent.com/JoStuff/aurora/refs/heads/main/druid-subclass-cryptids.index" />
+      <file name="druid-subclass-cryptids.xml" url="https://raw.githubusercontent.com/JoStuff/aurora/main/data/classes/druid-subclass-cryptids.index" />
     </update>
   </info>
   <element name="Circle of the Cryptids" type="Archetype" source="Custom" id="ID_CUSTOM_ARCHETYPE_CIRCLE_OF_CRYPTIDS">

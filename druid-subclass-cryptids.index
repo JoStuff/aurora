@@ -1,88 +1,89 @@
-<root>
+<elements>
   <info>
-    <name>Circle of the Cryptids</name>
-    <author>JoStuff</author>
-    <version>1.0</version>
-    <description>A custom Druid archetype for Aurora D&amp;D 5e app.</description>
-    <sources>
-      <source abbreviation="CotC" name="Circle of the Cryptids" />
-    </sources>
-    <date>2025-05-01</date>
-    <type>Archetype</type>
-    <update>
-      <version>1.0</version>
-      <date>2025-05-01</date>
-      <description>Initial release of the Circle of the Cryptids archetype.</description>
+    <update version="1.0.0">
+      <file name="druid-cryptids.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/custom/druid-cryptids.xml" />
     </update>
   </info>
-  <class name="Druid">
-    <description>Druids are wielders of nature's power, shifting forms and calling upon elemental magic.</description>
-    <archetype>
-      <name>Circle of the Cryptids</name>
-      <source>CotC</source>
-      <description>
-        Some Druids do not simply revere nature—they embrace its most mysterious and terrifying aspects.
-        The Circle of the Cryptids dedicates itself to the study and protection of legendary creatures that lurk at the edges of civilization.
-      </description>
-
-      <spellcasting>
-        <spell level="3" name="Darkness" />
-        <spell level="3" name="Mirror Image" />
-        <spell level="5" name="Fear" />
-        <spell level="5" name="Lightning Bolt" />
-        <spell level="7" name="Greater Invisibility" />
-        <spell level="7" name="Dominate Beast" />
-        <spell level="9" name="Cloudkill" />
-        <spell level="9" name="Dream" />
-      </spellcasting>
-
-      <feature level="2" name="Cryptid Wild Shape">
-        <description>
-          You can use Wild Shape to transform into cryptids instead of normal beasts.
-          You gain access to:
-          - CR 1: Selkie
-          - CR 2: Skinwalker, Kelpie, Ozark Howler, Wendigo
-          - CR 3: Jersey Devil, Mothman
-          - CR 4: Mishipeshu
-          These forms follow Wild Shape rules and may include supernatural traits.
-          You can choose to retain the ability to speak in cryptid form.
-        </description>
-      </feature>
-
-      <feature level="2" name="Cryptid's Veil">
-        <description>
-          As a bonus action, vanish into shadows for 1 minute:
-          - Advantage on Stealth checks
-          - Darkvision 60 ft. (or +30 ft. if you already have Darkvision)
-          - Disadvantage on being tracked by non-magical means
-          Uses: Proficiency Bonus per long rest.
-        </description>
-      </feature>
-
-      <feature level="6" name="Hybrid Transformation">
-        <description>
-          Gain a partial cryptid form:
-          - Choose one feature from a cryptid (e.g., Hunger Frenzy)
-          - Gain magical natural weapons (claws, fangs, etc.)
-          You can still cast spells, but can’t wear armor or shields.
-        </description>
-      </feature>
-
-      <feature level="10" name="Fear of the Unknown">
-        <description>
-          - Creatures within 10 ft. have disadvantage on Insight against you.
-          - Once per turn when attacked, force attacker to make a Wisdom save (DC = 8 + Proficiency + Wis).
-            On failure, they are frightened of you for 1 minute.
-          Uses: Wisdom modifier per long rest.
-        </description>
-      </feature>
-
-      <feature level="14" name="Myth Made Flesh">
-        <description>
-          - You can remain in Cryptid Wild Shape indefinitely.
-          - Once per long rest, if damage would reduce you to 0 HP, drop to 1 HP and teleport 30 feet away.
-        </description>
-      </feature>
-    </archetype>
-  </class>
-</root>
+  <element name="Circle of the Cryptids" type="Archetype" source="Custom" id="ID_CUSTOM_ARCHETYPE_CIRCLE_OF_CRYPTIDS">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Some Druids do not simply revere nature—they embrace its most mysterious and terrifying aspects. The Circle of the Cryptids dedicates itself to the study and protection of legendary creatures that lurk at the edges of civilization.</p>
+      <div element="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTID_WILD_SHAPE" />
+      <div element="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTIDS_VEIL" />
+      <div element="ID_CUSTOM_ARCHETYPE_FEATURE_HYBRID_TRANSFORMATION" />
+      <div element="ID_CUSTOM_ARCHETYPE_FEATURE_FEAR_OF_THE_UNKNOWN" />
+      <div element="ID_CUSTOM_ARCHETYPE_FEATURE_MYTH_MADE_FLESH" />
+    </description>
+    <sheet display="false">
+      <description>The Circle of the Cryptids dedicates itself to the study and protection of legendary creatures that lurk at the edges of civilization.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTID_WILD_SHAPE" level="2" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTIDS_VEIL" level="2" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_HYBRID_TRANSFORMATION" level="6" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_FEAR_OF_THE_UNKNOWN" level="10" />
+      <grant type="Archetype Feature" id="ID_CUSTOM_ARCHETYPE_FEATURE_MYTH_MADE_FLESH" level="14" />
+    </rules>
+  </element>
+  <element name="Cryptid Wild Shape" type="Archetype Feature" source="Custom" id="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTID_WILD_SHAPE">
+    <description>
+      <p>You can use Wild Shape to transform into cryptids instead of normal beasts. You gain access to:</p>
+      <ul>
+        <li>CR 1: Selkie</li>
+        <li>CR 2: Skinwalker, Kelpie, Ozark Howler, Wendigo</li>
+        <li>CR 3: Jersey Devil, Mothman</li>
+        <li>CR 4: Mishipeshu</li>
+      </ul>
+      <p>These forms follow Wild Shape rules and may include supernatural traits. You can choose to retain the ability to speak in cryptid form.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+  <element name="Cryptid's Veil" type="Archetype Feature" source="Custom" id="ID_CUSTOM_ARCHETYPE_FEATURE_CRYPTIDS_VEIL">
+    <description>
+      <p>As a bonus action, vanish into shadows for 1 minute:</p>
+      <ul>
+        <li>Advantage on Stealth checks</li>
+        <li>Darkvision 60 ft. (or +30 ft. if you already have Darkvision)</li>
+        <li>Disadvantage on being tracked by non-magical means</li>
+      </ul>
+      <p>Uses: Proficiency Bonus per long rest.</p>
+    </description>
+    <sheet usage="Proficiency Bonus/Long Rest">
+      <description>As a bonus action, vanish into shadows for 1 minute, gaining advantage on Stealth checks, Darkvision, and immunity to non-magical tracking.</description>
+    </sheet>
+  </element>
+  <element name="Hybrid Transformation" type="Archetype Feature" source="Custom" id="ID_CUSTOM_ARCHETYPE_FEATURE_HYBRID_TRANSFORMATION">
+    <description>
+      <p>Gain a partial cryptid form:</p>
+      <ul>
+        <li>Choose one feature from a cryptid (e.g., Hunger Frenzy)</li>
+        <li>Gain magical natural weapons (claws, fangs, etc.)</li>
+      </ul>
+      <p>You can still cast spells, but can’t wear armor or shields.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+  <element name="Fear of the Unknown" type="Archetype Feature" source="Custom" id="ID_CUSTOM_ARCHETYPE_FEATURE_FEAR_OF_THE_UNKNOWN">
+    <description>
+      <ul>
+        <li>Creatures within 10 ft. have disadvantage on Insight against you.</li>
+        <li>Once per turn when attacked, force attacker to make a Wisdom save (DC = 8 + Proficiency + Wis). On failure, they are frightened of you for 1 minute.</li>
+      </ul>
+      <p>Uses: Wisdom modifier per long rest.</p>
+    </description>
+    <sheet usage="Wisdom Modifier/Long Rest">
+      <description>Frighten creatures within 10 ft. when attacked, and impose disadvantage on Insight checks against you.</description>
+    </sheet>
+  </element>
+  <element name="Myth Made Flesh" type="Archetype Feature" source="Custom" id="ID_CUSTOM_ARCHETYPE_FEATURE_MYTH_MADE_FLESH">
+    <description>
+      <ul>
+        <li>You can remain in Cryptid Wild Shape indefinitely.</li>
+        <li>Once per long rest, if damage would reduce you to 0 HP, drop to 1 HP and teleport 30 feet away.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Remain in Cryptid Wild Shape indefinitely and avoid death once per long rest, teleporting 30 feet away instead.</description>
+    </sheet>
+  </element>
+</elements>

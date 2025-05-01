@@ -7,6 +7,13 @@
     <sources>
       <source abbreviation="CotC" name="Circle of the Cryptids" />
     </sources>
+    <date>2025-05-01</date>
+    <type>Archetype</type>
+    <update>
+      <version>1.0</version>
+      <date>2025-05-01</date>
+      <description>Initial release of the Circle of the Cryptids archetype.</description>
+    </update>
   </info>
   <class name="Druid">
     <description>Druids are wielders of nature's power, shifting forms and calling upon elemental magic.</description>

@@ -3,7 +3,7 @@
     <name>Circle of the Cryptids</name>
     <author>JoStuff</author>
     <version>1.0</version>
-    <description>A custom Druid archetype for Aurora D&D 5e app.</description>
+    <description>A custom Druid archetype for Aurora D&amp;D 5e app.</description>
     <sources>
       <source abbreviation="CotC" name="Circle of the Cryptids" />
     </sources>
